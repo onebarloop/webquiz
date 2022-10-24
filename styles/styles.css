@@ -1,0 +1,98 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    width: 300px;
+    background-color: #D5D7D8;
+    margin-left: auto;
+    margin-right: auto;
+    color: wheat;
+    
+}
+
+header {
+    background-color: #4E5255;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #92979B;
+}
+
+section {
+    background-color: black;
+    width: 80%;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.bookmark button {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    background-color: #D5D7D8;
+    padding: 3px 3px 1px 3px;
+    border-radius: 6px;
+}
+
+.bookmark button img {
+    width: 20px;
+}
+
+section span {
+    text-align: center;
+    display: block;
+}
+
+.question {
+    background-color: #4E5255;
+    text-align: center; 
+}
+
+.answer {
+    background-color: #DA304C;
+    height: 50px;
+    margin: 10px 20px;
+    /* visibility: hidden; */
+    
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    
+}
+
+.tags button {
+    width: 60px;
+    border-radius: 4px;
+    background-color: #D5D7D8;
+}
+
+footer {
+    background-color: #4E5255;
+    position: fixed;
+    width: inherit; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;    
+    
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
