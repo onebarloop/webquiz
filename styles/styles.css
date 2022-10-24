@@ -24,6 +24,19 @@ main {
 
 section {
     background-color: #edc6b9;
+    width: 80%;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+
+section span {
+    text-align: center;
+    display: block;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
 }
 
 footer {
@@ -35,6 +48,5 @@ footer {
 nav {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
