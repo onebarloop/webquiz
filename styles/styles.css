@@ -83,11 +83,13 @@ footer {
     width: inherit; 
 }
 
-nav {
+ul {
     display: flex;
     justify-content: center;
-    justify-content: space-around;    
-    
+    justify-content: space-around;       
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
