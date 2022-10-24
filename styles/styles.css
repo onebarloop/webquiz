@@ -30,12 +30,16 @@ section {
     margin: 10px 0 10px 0;
     padding: 10px;
     position: relative;
+    
 }
 
-.bookmark {
+.bookmark button {
     position: absolute;
-    right: 0;
+    right: -8px;
     top: -8px;
+    background-color: #D5D7D8;
+    padding: 3px 3px 1px 3px;
+    border-radius: 6px;
 }
 
 section span {
@@ -45,8 +49,7 @@ section span {
 
 .question {
     background-color: #4E5255;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .answer {
@@ -64,7 +67,7 @@ section span {
     
 }
 
-button {
+.tags button {
     width: 60px;
     border-radius: 4px;
     background-color: #D5D7D8;
@@ -86,4 +89,8 @@ nav {
 a {
     text-decoration: none;
     color: aliceblue;
+}
+
+img {
+    width: 20px;
 }
