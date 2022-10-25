@@ -10,6 +10,11 @@ body {
   color: wheat;
 }
 
+.dark {
+  background-color: black;
+  color: white;
+}
+
 header {
   background-color: #4e5255;
   text-align: center;
@@ -59,21 +64,28 @@ section {
   background-color: #da304c;
 }
 
-section span {
-  text-align: center;
-}
-
 .question {
   background-color: #4e5255;
   text-align: center;
 }
 
-button.answer {
+.answerBtn {
   text-align: center;
   background-color: #eda4b0;
   margin: 10px 20px;
   margin-left: 30%;
   width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  background-color: rgb(171, 171, 3);
+  text-align: center;
+  margin-top: 0;
+  color: #38393a;
 }
 
 .tags {
