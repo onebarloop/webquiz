@@ -6,5 +6,14 @@ const answer = document.querySelector('[data-js="answer"]');
 
 answerBtn.addEventListener("click", () => {
   console.log("Show Answer");
-  answer.classList.toggle("answer");
+  answer.classList.toggle("hidden");
+});
+
+const answerBtn2 = document.querySelector('[data-js="answerBtn2"]');
+
+const answer2 = document.querySelector('[data-js="answer2"]');
+
+answerBtn2.addEventListener("click", () => {
+  console.log("Show Answer");
+  answer2.classList.toggle("hidden");
 });

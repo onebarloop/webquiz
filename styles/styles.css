@@ -77,9 +77,8 @@ section {
   width: 100px;
 }
 
-.answer {
-  visibility: hidden;
-  position: absolute;
+.hidden {
+  display: none;
 }
 
 .visible {
