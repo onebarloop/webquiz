@@ -143,14 +143,27 @@ nav li.active {
 }
 
 .counter {
-  background-color: #eda4b0;
   width: 80%;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   padding-right: 5px;
 }
 
 .counter img {
   width: 30px;
+}
+
+.counter--question {
+  background-color: #eda4b0;
+  width: 50%;
+}
+
+.counter--bookmark {
+  background-color: #eda4b0;
+  width: 50%;
+}
+
+.darkmode--button {
+  margin-bottom: 10px;
 }
