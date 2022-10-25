@@ -144,8 +144,13 @@ nav li.active {
 
 .counter {
   background-color: #eda4b0;
-  height: 100px;
   width: 80%;
-  display: flex;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.counter img {
+  width: 30px;
 }
