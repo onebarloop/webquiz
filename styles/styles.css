@@ -70,7 +70,7 @@ section span {
 
 button.answer {
   text-align: center;
-  background-color: #da304c;
+  background-color: #eda4b0;
   margin: 10px 20px;
   margin-left: 30%;
   width: 100px;
@@ -139,4 +139,12 @@ nav li.active {
   padding: 2px;
   margin-right: 5px;
   font-size: larger;
+}
+
+.counter {
+  background-color: #eda4b0;
+  height: 100px;
+  width: 80%;
+  display: flex;
+  margin-bottom: 20px;
 }
