@@ -128,16 +128,17 @@ nav li.active {
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   margin: 20px;
   border-radius: 100px;
+  border: 3px solid;
 }
 
 .profile p {
   background-color: grey;
   padding: 2px;
-  margin-right: 5px;
+  margin-right: 20px;
   font-size: larger;
 }
 
