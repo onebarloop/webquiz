@@ -116,3 +116,16 @@ nav img {
 nav li:hover {
   background-color: aliceblue;
 }
+
+/* Profile Page */
+
+.profile {
+  display: flex;
+}
+
+.profilepic {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 100px;
+}
