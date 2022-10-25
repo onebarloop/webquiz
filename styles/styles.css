@@ -66,14 +66,14 @@ section span {
 .question {
   background-color: #4e5255;
   text-align: center;
-  position: relative;
 }
 
-.answer {
+button.answer {
+  text-align: center;
   background-color: #da304c;
-  height: 50px;
   margin: 10px 20px;
-  /* visibility: hidden; */
+  margin-left: 30%;
+  width: 100px;
 }
 
 .tags {
@@ -83,15 +83,16 @@ section span {
 }
 
 .tags button {
-  width: 60px;
+  width: 30px;
   border-radius: 4px;
   background-color: #d5d7d8;
 }
 
 footer {
   background-color: #4e5255;
-  position: fixed;
   width: inherit;
+  position: sticky;
+  bottom: 0;
 }
 
 ul {
