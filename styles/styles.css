@@ -59,21 +59,21 @@ section {
   background-color: #da304c;
 }
 
-section span {
-  text-align: center;
-}
-
 .question {
   background-color: #4e5255;
   text-align: center;
 }
 
-button.answer {
+.answerBtn {
   text-align: center;
   background-color: #eda4b0;
   margin: 10px 20px;
   margin-left: 30%;
   width: 100px;
+}
+
+.answer {
+  visibility: hidden;
 }
 
 .tags {
