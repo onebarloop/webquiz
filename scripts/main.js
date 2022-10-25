@@ -6,7 +6,7 @@ const answer = document.querySelector('[data-js="answer"]');
 
 answerBtn.addEventListener("click", () => {
   console.log("Show Answer");
-  answer.classList.toggle("hidden");
+  answer.classList.toggle("quiz-card__answer--hidden");
 });
 
 const answerBtn2 = document.querySelector('[data-js="answerBtn2"]');
