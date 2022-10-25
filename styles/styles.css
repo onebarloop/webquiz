@@ -114,7 +114,11 @@ nav img {
 }
 
 nav li:hover {
-  background-color: aliceblue;
+  background-color: aliceblue !important;
+}
+
+nav li.active {
+  background-color: wheat;
 }
 
 /* Profile Page */
@@ -123,9 +127,16 @@ nav li:hover {
   display: flex;
 }
 
-.profilepic {
+.profile img {
   width: 150px;
   height: 150px;
   margin: 20px;
   border-radius: 100px;
+}
+
+.profile p {
+  background-color: grey;
+  padding: 2px;
+  margin-right: 5px;
+  font-size: larger;
 }
