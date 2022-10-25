@@ -15,5 +15,5 @@ const answer2 = document.querySelector('[data-js="answer2"]');
 
 answerBtn2.addEventListener("click", () => {
   console.log("Show Answer");
-  answer2.classList.toggle("hidden");
+  answer2.classList.toggle("quiz-card__answer--hidden");
 });
