@@ -70,7 +70,7 @@ section span {
 
 button.answer {
   text-align: center;
-  background-color: #da304c;
+  background-color: #eda4b0;
   margin: 10px 20px;
   margin-left: 30%;
   width: 100px;
@@ -114,5 +114,56 @@ nav img {
 }
 
 nav li:hover {
-  background-color: aliceblue;
+  background-color: aliceblue !important;
+}
+
+nav li.active {
+  background-color: wheat;
+}
+
+/* Profile Page */
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  width: 130px;
+  height: 130px;
+  margin: 20px;
+  border-radius: 100px;
+  border: 3px solid;
+}
+
+.profile p {
+  background-color: grey;
+  padding: 2px;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.counter {
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  padding-right: 5px;
+}
+
+.counter img {
+  width: 30px;
+}
+
+.counter--question {
+  background-color: #eda4b0;
+  width: 50%;
+}
+
+.counter--bookmark {
+  background-color: #eda4b0;
+  width: 50%;
+}
+
+.darkmode--button {
+  margin-bottom: 10px;
 }
