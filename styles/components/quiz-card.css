@@ -41,15 +41,15 @@
   width: 100px;
 }
 
-.quiz-card__answer--hidden {
-  display: none;
-}
-
-.quiz-card__answer--visible {
+.quiz-card__answer {
   background-color: rgb(171, 171, 3);
   text-align: center;
   margin-top: 0;
   color: #38393a;
+}
+
+.quiz-card__answer--hidden {
+  display: none;
 }
 
 .quiz-card__tagbox {
