@@ -18,13 +18,21 @@
   z-index: 1;
 }
 
-.quiz-card__bookmark img {
+.quiz-card__bookmark > img {
   width: 20px;
 }
 
 .quiz-card__bookmark:hover {
   background-color: #76787b;
   border: 2px solid white;
+}
+
+.quiz-card__bookmark:active {
+  border: 0;
+}
+
+.quiz-card__bookmark--active {
+  background-color: rgb(233, 233, 19);
 }
 
 .quiz-card__question {

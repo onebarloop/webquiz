@@ -17,3 +17,11 @@ answerBtn2.addEventListener("click", () => {
   console.log("Show Answer");
   answer2.classList.toggle("quiz-card__answer--hidden");
 });
+
+//bookmark
+
+const bookmark = document.querySelector('[data-js="bookmark"]');
+
+bookmark.addEventListener("click", () => {
+  bookmark.classList.toggle("quiz-card__bookmark--active");
+});
