@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  background-color: #d5d7d8;
+  margin-left: auto;
+  margin-right: auto;
+  color: wheat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #92979b;
+}
+
+footer {
+  background-color: #4e5255;
+  width: inherit;
+  position: sticky;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}

@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/main2.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>QUIZ APP</h1>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">QUIZ APP</h1>
     </header>
-    
+
     <main>
-        <div class="profile">
-            <img src="./assets/alex.jpeg" alt="Picture of Alex">
-            <p>Alexander Bayer </p>
-        </div>    
-        <div class="counter">
-            <div class="counter--bookmark"><img src="./assets/icon_bookmark.png" alt=""></div>
-            <div class="counter--question"><img src="./assets/icon_question.png" alt=""></div>
+      <section class="profile-card">
+        <img
+          class="profile-card__pic"
+          src="./assets/alex.jpeg"
+          alt="Picture of Alex"
+        />
+        <p class="profile-card__text">Alexander Bayer</p>
+      </section>
+      <div class="profile-card__counter">
+        <div class="profile-card__label">
+          <img
+            class="profile-card__icon"
+            src="./assets/icon_bookmark.png"
+            alt=""
+          />
         </div>
-        <button class="darkmode--button" data-js="darkBtn">Toggle Darkmode</button>
-        
+        <div class="profile-card__label">
+          <img
+            class="profile-card__icon"
+            src="./assets/icon_question.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <button class="profile-card__darkmodebtn" data-js="darkBtn">
+        Toggle Darkmode
+      </button>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li ><a href="index.html"><img src="./assets/icon_main.png" alt=""></a></li>
-                <li><a href="bookmarks.html"><img src="./assets/icon_bookmark.png" alt=""></a></li>
-                <li class="active"><a href="profile.html"><img src="./assets/icon_user.png" alt=""></a></li>
-            </ol>
-        </nav>      
+      <nav>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a href="index.html"
+              ><img class="navbar__icon" src="./assets/icon_main.png" alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="bookmarks.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_bookmark.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item navbar__item--active">
+            <a href="profile.html"
+              ><img class="navbar__icon" src="./assets/icon_user.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
-
