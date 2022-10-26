@@ -30,6 +30,7 @@
 .quiz-card__question {
   background-color: #4e5255;
   text-align: center;
+  margin: 0;
 }
 
 .quiz-card__answerbtn {
@@ -51,8 +52,14 @@
   color: #38393a;
 }
 
-.quiz-card__tags {
+.quiz-card__tagbox {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+}
+
+.quiz-card__tag {
+  font-size: 0.7em;
+  background-color: rgba(239, 239, 239, 0.241);
+  color: #c8c5c5;
 }
