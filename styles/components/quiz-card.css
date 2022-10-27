@@ -44,8 +44,10 @@
 .quiz-card__answerbtn {
   text-align: center;
   background-color: #eda4b0;
-  margin: 10px 20px;
-  margin-left: 30%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100px;
 }
 
