@@ -29,6 +29,7 @@ if (darkMode === "enabled") {
 
 //eventlistener button
 darkSwitch.addEventListener("click", () => {
+  darkMode = localStorage.getItem("dark-mode");
   if (darkMode === "disabled") {
     enableDarkmode();
   } else {

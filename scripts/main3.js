@@ -25,6 +25,7 @@ if (bookcheck === "on") {
 }
 
 bookmark.addEventListener("click", () => {
+  bookcheck = localStorage.getItem("bookmark");
   if (bookcheck === "on") {
     bookmarkOff();
   } else {
