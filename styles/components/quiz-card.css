@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.quiz.card--hidden {
+  display: none;
+}
+
 .quiz-card__bookmark {
   position: absolute;
   right: -8px;
