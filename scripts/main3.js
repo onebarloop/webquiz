@@ -1,6 +1,6 @@
 //bookmark
 
-const bookmark = document.querySelector('[data-js="bookmark__one"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
 let bookcheck = localStorage.getItem("bookmark");
 
