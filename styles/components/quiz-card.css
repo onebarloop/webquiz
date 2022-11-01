@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.quiz.card--hidden {
+.quiz-card--hidden {
   display: none;
 }
 

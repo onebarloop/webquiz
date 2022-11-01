@@ -1,12 +1,6 @@
-// add bookmarked questions
-
-//const question = document.querySelector('[data-js="test"]');
-
-//question.style.display = "none";
-
 //bookmark
 
-const bookmark = document.querySelector('[data-js="bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark__one"]');
 
 let bookcheck = localStorage.getItem("bookmark");
 
