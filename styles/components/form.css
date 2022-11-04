@@ -1,0 +1,22 @@
+.formcard {
+  background-color: black;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  color: red;
+}
+
+.form__counter {
+  align-self: flex-end;
+  font-size: 0.7em;
+}
+
+.form__button {
+  font-weight: bold;
+}

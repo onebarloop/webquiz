@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/main2.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -14,35 +15,22 @@
     </header>
 
     <main>
-      <section class="profile-card">
-        <img
-          class="profile-card__pic"
-          src="./assets/alex.jpeg"
-          alt="Picture of Alex"
-        />
-        <p class="profile-card__text">Alexander Bayer</p>
-      </section>
-      <div class="profile-card__counter">
-        <div class="profile-card__label">
-          <img
-            class="profile-card__icon"
-            src="./assets/icon_bookmark.png"
-            alt=""
-          />
-        </div>
-        <div class="profile-card__label">
-          <img
-            class="profile-card__icon"
-            src="./assets/icon_question.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <button class="profile-card__darkmodebtn" data-js="darkBtn">
-        Toggle "Darkmode"
-      </button>
-    </main>
+      <h2>Submit a question!</h2>
 
+      <section class="formcard">
+        <form class="form" action="">
+          <label class="form__label" for="question">Your question:</label>
+          <textarea name="question" id="question" cols="25" rows="4"></textarea>
+          <span class="form__counter">Zeichen übrig</span>
+          <label class="form__label" for="answer">Your answer:</label>
+          <textarea name="answer" id="answer" cols="25" rows="4"></textarea>
+          <span class="form__counter">Zeichen übrig</span>
+          <label class="form__label" for="tag">Your tags</label>
+          <input type="text" id="tag" name="tag" />
+          <button class="form__button" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <nav>
         <ul class="navbar">
@@ -59,7 +47,7 @@
                 alt=""
             /></a>
           </li>
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item--active">
             <a href="form.html"
               ><img
                 class="navbar__icon"
@@ -67,7 +55,7 @@
                 alt=""
             /></a>
           </li>
-          <li class="navbar__item navbar__item--active">
+          <li class="navbar__item">
             <a href="profile.html"
               ><img class="navbar__icon" src="./assets/icon_user.png" alt=""
             /></a>
