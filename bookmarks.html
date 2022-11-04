@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/main2.js" defer></script>
-    <script src="./scripts/main3.js" defer></script>
+    <script src="./scripts/main4.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -15,43 +15,27 @@
     </header>
 
     <main>
-      <section class="quiz-card" data-js="test">
-        <button class="quiz-card__bookmark">
-          <img src="./assets/icon_bookmark.png" alt="bookmark icon" />
-        </button>
+      <h2>Your bookmarked questions</h2>
+      <section class="quiz-card quiz-card--hidden" data-js="test">
         <p class="quiz-card__question">
           What property flips the axis of a flexbox?
         </p>
-        <button class="quiz-card__answerbtn" data-js="answerBtn">
-          OUT OF ORDER
-        </button>
-        <p class="quiz-card__answer quiz-card__answer--hidden" data-js="answer">
-          flex-direction
-        </p>
+        <p class="quiz-card__answer" data-js="answer">flex-direction</p>
         <div class="quiz-card__tagbox">
-          <button class="quiz-card__tag">#</button>
-          <button class="quiz-card__tag">#</button>
-          <button class="quiz-card__tag">#</button>
+          <button class="quiz-card__tag">#css</button>
+          <button class="quiz-card__tag">#flexbox</button>
+          <button class="quiz-card__tag">#webdev</button>
         </div>
       </section>
 
-      <section class="quiz-card">
-        <button class="quiz-card__bookmark">
-          <img src="./assets/icon_bookmark.png" alt="bookmark icon" />
-        </button>
-        <p class="quiz-card__question">
-          What property flips the axis of a flexbox?
-        </p>
-        <button class="quiz-card__answerbtn" data-js="answerBtn">
-          OUT OF ORDER
-        </button>
-        <p class="quiz-card__answer quiz-card__answer--hidden" data-js="answer">
-          flex-direction
-        </p>
+      <section class="quiz-card quiz quiz-card--hidden" data-js="test2">
+        <p class="quiz-card__question">How much is 7 times 7?</p>
+
+        <p class="quiz-card__answer" data-js="answer2">49!</p>
         <div class="quiz-card__tagbox">
-          <button class="quiz-card__tag">#</button>
-          <button class="quiz-card__tag">#</button>
-          <button class="quiz-card__tag">#</button>
+          <button class="quiz-card__tag">#math</button>
+          <button class="quiz-card__tag">#multiplication</button>
+          <button class="quiz-card__tag">#49</button>
         </div>
       </section>
     </main>
