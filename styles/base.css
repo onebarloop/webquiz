@@ -24,6 +24,13 @@ footer {
   bottom: 0;
 }
 
+h2 {
+  background-color: #4e5255;
+  padding: 0.5rem;
+  text-align: center;
+  width: 90%;
+}
+
 a {
   text-decoration: none;
 }
