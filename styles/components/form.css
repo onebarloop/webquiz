@@ -9,7 +9,6 @@
 }
 
 .form__label {
-  color: red;
 }
 
 .form__counter {
@@ -18,5 +17,8 @@
 }
 
 .form__button {
+  margin-top: 5%;
   font-weight: bold;
+  width: 40%;
+  align-self: center;
 }
