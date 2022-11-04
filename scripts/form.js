@@ -13,7 +13,6 @@ const submitButton = document.querySelector('[data-js="submit-button"]');
 form.elements.question.addEventListener("input", (event) => {
   let length = event.target.value.length;
   let maxLength = 160;
-
   counterQuestion.textContent = `${maxLength - length} Zeichen übrig`;
 });
 
@@ -27,7 +26,7 @@ form.elements.answer.addEventListener("input", (event) => {
 
 const generateCard = (data) => {
   const box = document.createElement("section");
-  box.classList.add("quiz-card");
+  box.classList.add("quiz-card", "quiz-card--animation");
   main.append(box);
 
   const questionBox = document.createElement("p");
@@ -41,7 +40,12 @@ const generateCard = (data) => {
   box.append(answerBox);
 
   const tagBox = document.createElement("div");
-  tagBox.classList.add("quiz-card__tagbox");
+  tagBox.classList.add(
+    "quiz-card__tagbox",
+    "animate__animated",
+    "animate__rubberBand"
+  );
+
   box.append(tagBox);
 
   const tagButton = document.createElement("button");

@@ -39,3 +39,8 @@ a {
   background-color: black;
   color: white;
 }
+
+.animate__animated.animate__rubberBand {
+  --animate-duration: 1s;
+  --animation-delay: 2s;
+}
