@@ -46,7 +46,7 @@ const generateCard = (data) => {
 
   const tagButton = document.createElement("button");
   tagButton.classList.add("quiz-card__tag");
-  tagButton.textContent = `#${data.tag}`;
+  tagButton.textContent = `#${data.tag.toLowerCase()}`;
   tagBox.append(tagButton);
 };
 

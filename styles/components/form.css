@@ -9,8 +9,10 @@
   flex-direction: column;
 }
 
+/*
 .form__label {
 }
+*/
 
 .form__input {
   background-color: rgb(241, 236, 230);
