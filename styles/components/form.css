@@ -12,9 +12,14 @@
 .form__label {
 }
 
+.form__input {
+  background-color: rgb(241, 236, 230);
+}
+
 .form__counter {
   align-self: flex-end;
   font-size: 0.7em;
+  color: grey;
 }
 
 .form__button {
@@ -22,4 +27,5 @@
   font-weight: bold;
   width: 40%;
   align-self: center;
+  background-color: #eda4b0;
 }
