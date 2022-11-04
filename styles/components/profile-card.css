@@ -36,4 +36,7 @@
 
 .profile-card__darkmodebtn {
   margin-bottom: 10px;
+  font-weight: bold;
+  background-color: antiquewhite;
+  align-self: center;
 }

@@ -20,17 +20,29 @@
       <section class="formcard">
         <form data-js="form" class="form" action="">
           <label class="form__label" for="question">Your question:</label>
-          <textarea name="question" id="question" cols="25" rows="4"></textarea>
+          <textarea
+            class="form__input"
+            name="question"
+            id="question"
+            cols="25"
+            rows="4"
+          ></textarea>
           <span data-js="counter-question" class="form__counter"
             >160 Zeichen übrig</span
           >
           <label class="form__label" for="answer">Your answer:</label>
-          <textarea name="answer" id="answer" cols="25" rows="4"></textarea>
+          <textarea
+            class="form__input"
+            name="answer"
+            id="answer"
+            cols="25"
+            rows="4"
+          ></textarea>
           <span data-js="counter-answer" class="form__counter"
             >160 Zeichen übrig</span
           >
           <label class="form__label" for="tag">Your tags</label>
-          <input type="text" id="tag" name="tag" />
+          <input class="form__input" type="text" id="tag" name="tag" />
           <button data-js="submit-button" class="form__button" type="submit">
             Submit
           </button>
