@@ -65,6 +65,28 @@ form.addEventListener("submit", (event) => {
     submitButton.textContent = "Stop!";
     submitButton.setAttribute("style", "background-color : red");
     return;
+  } else if (userInput.question === "" && userInput.answer === "") {
+    event.target.question.setAttribute(
+      "placeholder",
+      "bitte gibt eine Frage ein"
+    );
+    event.target.answer.setAttribute(
+      "placeholder",
+      "bitte gibt eine Antwort ein"
+    );
+    return;
+  } else if (userInput.question === "") {
+    event.target.question.setAttribute(
+      "placeholder",
+      "bitte gibt eine Frage ein"
+    );
+    return;
+  } else if (userInput.answer === "") {
+    event.target.answer.setAttribute(
+      "placeholder",
+      "bitte gibt eine Antwort ein"
+    );
+    return;
   } else {
     generateCard(userInput);
     cardCount++;
