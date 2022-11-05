@@ -32,13 +32,26 @@
 }
 
 .counterbox__label {
-  background-color: #eda4b0;
+  background-color: #d99e40b8;
   width: 50%;
   display: flex;
+  justify-content: space-between;
+  border: 3px dotted black;
+  gap: 10%;
+  align-items: center;
 }
 
 .counterbox__icon {
-  width: 40%;
+  width: 50%;
+}
+
+.counterbox__text {
+  padding-right: 1.2rem;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .profile-card__darkmodebtn {
