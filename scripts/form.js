@@ -1,5 +1,8 @@
 const form = document.querySelector('[data-js="form"]');
 
+const warning = document.querySelector('[data-js="warning"]');
+const warning2 = document.querySelector('[data-js="warning2"]');
+
 const main = document.querySelector('[data-js="main"]');
 
 const counterQuestion = document.querySelector('[data-js="counter-question"]');
@@ -12,14 +15,34 @@ const submitButton = document.querySelector('[data-js="submit-button"]');
 
 form.elements.question.addEventListener("input", (event) => {
   let length = event.target.value.length;
-  let maxLength = 160;
+  let maxLength = 120;
   counterQuestion.textContent = `${maxLength - length} Zeichen übrig`;
+  if (length > 50) {
+    warning.classList.remove("form__warning--exit");
+    warning.classList.add("form__warning--enter");
+    event.target.setAttribute("style", "color : red");
+  }
+  if (length < 50) {
+    warning.classList.remove("form__warning--enter");
+    warning.classList.add("form__warning--exit");
+    event.target.setAttribute("style", "color : black");
+  }
 });
 
 form.elements.answer.addEventListener("input", (event) => {
   let length = event.target.value.length;
-  let maxLength = 160;
+  let maxLength = 120;
   counterAnswer.textContent = `${maxLength - length} Zeichen übrig`;
+  if (length > 50) {
+    warning2.classList.remove("form__warning--exit");
+    warning2.classList.add("form__warning--enter");
+    event.target.setAttribute("style", "color : red");
+  }
+  if (length < 50) {
+    warning2.classList.remove("form__warning--enter");
+    warning2.classList.add("form__warning--exit");
+    event.target.setAttribute("style", "color : black");
+  }
 });
 
 //Cardgenerator
@@ -72,23 +95,23 @@ form.addEventListener("submit", (event) => {
   } else if (userInput.question === "" && userInput.answer === "") {
     event.target.question.setAttribute(
       "placeholder",
-      "bitte gibt eine Frage ein"
+      "bitte gib eine Frage ein"
     );
     event.target.answer.setAttribute(
       "placeholder",
-      "bitte gibt eine Antwort ein"
+      "bitte gib eine Antwort ein"
     );
     return;
   } else if (userInput.question === "") {
     event.target.question.setAttribute(
       "placeholder",
-      "bitte gibt eine Frage ein"
+      "bitte gib eine Frage ein"
     );
     return;
   } else if (userInput.answer === "") {
     event.target.answer.setAttribute(
       "placeholder",
-      "bitte gibt eine Antwort ein"
+      "bitte gib eine Antwort ein"
     );
     return;
   } else {

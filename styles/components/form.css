@@ -32,3 +32,39 @@
   align-self: center;
   background-color: #eda4b0;
 }
+
+.form__warning {
+  position: absolute;
+  top: 140px;
+  right: -50px;
+  background-color: red;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.form__warning2 {
+  position: absolute;
+  top: 240px;
+  right: -50px;
+  background-color: red;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.form__warning--enter {
+  transform: translateX(-45vw);
+  transition: all 1s cubic-bezier(0.41, 1.12, 0.83, 0.67);
+}
+
+.form__warning--exit {
+  transform: translateX(280px);
+  transition: all 1s cubic-bezier(0.97, 0.13, 0.96, 0.76);
+}
