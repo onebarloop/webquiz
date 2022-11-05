@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>QuizApp</title>
+    <link rel="icon" href="assets/beaver.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./scripts/main2.js" defer></script>
-    <script src="./scripts/main4.js" defer></script>
+    <script src="./scripts/darkmodebtn.js" defer></script>
+    <script src="./scripts/bookmarks.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -15,7 +16,7 @@
     </header>
 
     <main>
-      <h2>Your bookmarked questions</h2>
+      <h2>Your Bookmarks</h2>
       <section class="quiz-card quiz-card--hidden" data-js="test">
         <p class="quiz-card__question">
           What property flips the axis of a flexbox?
@@ -28,7 +29,7 @@
         </div>
       </section>
 
-      <section class="quiz-card quiz quiz-card--hidden" data-js="test2">
+      <section class="quiz-card quiz-card--hidden" data-js="test2">
         <p class="quiz-card__question">How much is 7 times 7?</p>
 
         <p class="quiz-card__answer" data-js="answer2">49!</p>
@@ -53,6 +54,14 @@
               ><img
                 class="navbar__icon"
                 src="./assets/icon_bookmark.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="form.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_question.png"
                 alt=""
             /></a>
           </li>

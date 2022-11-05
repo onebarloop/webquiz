@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>QuizApp</title>
+    <link rel="icon" href="assets/beaver.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/main2.js" defer></script>
-    <script src="./scripts/main3.js" defer></script>
+
+    <script src="./scripts/answerbtn.js" defer></script>
+    <script src="./scripts/darkmodebtn.js" defer></script>
+    <script src="./scripts/bookmarking.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -24,7 +26,10 @@
           What property flips the axis of a flexbox?
         </p>
         <button class="quiz-card__answerbtn" data-js="answerBtn">Answer</button>
-        <p class="quiz-card__answer quiz-card__answer--hidden" data-js="answer">
+        <p
+          class="quiz-card__answer quiz-card__answer--animation quiz-card__answer--hidden"
+          data-js="answer"
+        >
           flex-direction
         </p>
         <div class="quiz-card__tagbox">
@@ -43,7 +48,7 @@
           Answer
         </button>
         <p
-          class="quiz-card__answer quiz-card__answer--hidden"
+          class="quiz-card__answer quiz-card__answer--animation quiz-card__answer--hidden"
           data-js="answer2"
         >
           49!
@@ -59,11 +64,9 @@
         <button class="quiz-card__bookmark">
           <img src="./assets/icon_bookmark.png" alt="bookmark icon" />
         </button>
-        <p class="quiz-card__question">
-          What property flips the axis of a flexbox?
-        </p>
+        <p class="quiz-card__question">***Maintenance***</p>
         <button class="quiz-card__answerbtn" data-js="answerBtn">
-          OUT OF ORDER
+          out of order
         </button>
         <p class="quiz-card__answer quiz-card__answer--hidden" data-js="answer">
           flex-direction
@@ -79,11 +82,9 @@
         <button class="quiz-card__bookmark">
           <img src="./assets/icon_bookmark.png" alt="bookmark icon" />
         </button>
-        <p class="quiz-card__question">
-          What property flips the axis of a flexbox?
-        </p>
+        <p class="quiz-card__question">***Maintenance***</p>
         <button class="quiz-card__answerbtn" data-js="answerBtn">
-          OUT OF ORDER
+          out of order
         </button>
         <p class="quiz-card__answer quiz-card__answer--hidden" data-js="answer">
           flex-direction
@@ -109,6 +110,14 @@
               ><img
                 class="navbar__icon"
                 src="./assets/icon_bookmark.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="form.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_question.png"
                 alt=""
             /></a>
           </li>

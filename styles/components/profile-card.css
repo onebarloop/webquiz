@@ -1,20 +1,27 @@
 .profile-card {
   display: flex;
+  width: 80%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  gap: 5px;
 }
 
 .profile-card__pic {
-  width: 130px;
-  height: 130px;
-  margin: 20px;
-  border-radius: 100px;
-  border: 3px solid;
+  width: 50%;
+  height: 50%;
+
+  border-radius: 10px;
+  border: black 3px solid;
 }
 
 .profile-card__text {
   background-color: grey;
   padding: 2px;
-  margin-right: 20px;
-  border: 3px solid;
+  margin: 0;
+  border: 3px solid black;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .profile-card__counter {
@@ -36,4 +43,7 @@
 
 .profile-card__darkmodebtn {
   margin-bottom: 10px;
+  font-weight: bold;
+  background-color: antiquewhite;
+  align-self: center;
 }

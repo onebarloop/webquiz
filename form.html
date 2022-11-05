@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+    <link rel="icon" href="assets/beaver.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="./scripts/darkmodebtn.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">QUIZ APP</h1>
+    </header>
+
+    <main data-js="main">
+      <h2>Submit a question!</h2>
+
+      <section class="formcard">
+        <form data-js="form" class="form" action="">
+          <label class="form__label" for="question">Your question:</label>
+          <textarea
+            class="form__input"
+            name="question"
+            id="question"
+            cols="25"
+            rows="4"
+            placeholder="..."
+          ></textarea>
+          <span data-js="counter-question" class="form__counter"
+            >160 Zeichen übrig</span
+          >
+          <label class="form__label" for="answer">Your answer:</label>
+          <textarea
+            class="form__input"
+            name="answer"
+            id="answer"
+            cols="25"
+            rows="4"
+            placeholder="..."
+          ></textarea>
+          <span data-js="counter-answer" class="form__counter"
+            >160 Zeichen übrig</span
+          >
+          <label class="form__label" for="tag">Your tags</label>
+          <input class="form__input" type="text" id="tag" name="tag" />
+          <button data-js="submit-button" class="form__button" type="submit">
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a href="index.html"
+              ><img class="navbar__icon" src="./assets/icon_main.png" alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="bookmarks.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_bookmark.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item navbar__item--active">
+            <a href="form.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_question.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="profile.html"
+              ><img class="navbar__icon" src="./assets/icon_user.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

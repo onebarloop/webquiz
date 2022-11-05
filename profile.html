@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>QuizApp</title>
+    <link rel="icon" href="assets/beaver.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./scripts/main2.js" defer></script>
+    <script src="./scripts/darkmodebtn.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -14,13 +15,14 @@
     </header>
 
     <main>
+      <h2>Your Profile</h2>
       <section class="profile-card">
         <img
           class="profile-card__pic"
-          src="./assets/alex.jpeg"
-          alt="Picture of Alex"
+          src="./assets/block.webp"
+          alt="profile picture"
         />
-        <p class="profile-card__text">Alexander Bayer</p>
+        <p class="profile-card__text">Your name</p>
       </section>
       <div class="profile-card__counter">
         <div class="profile-card__label">
@@ -39,7 +41,7 @@
         </div>
       </div>
       <button class="profile-card__darkmodebtn" data-js="darkBtn">
-        Toggle "Darkmode"
+        "Darkmode"
       </button>
     </main>
 
@@ -56,6 +58,14 @@
               ><img
                 class="navbar__icon"
                 src="./assets/icon_bookmark.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="navbar__item">
+            <a href="form.html"
+              ><img
+                class="navbar__icon"
+                src="./assets/icon_question.png"
                 alt=""
             /></a>
           </li>

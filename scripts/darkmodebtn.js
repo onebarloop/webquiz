@@ -31,8 +31,10 @@ if (darkMode === "enabled") {
 darkSwitch.addEventListener("click", () => {
   darkMode = localStorage.getItem("dark-mode");
   if (darkMode === "disabled") {
+    darkStyle.classList.add("dark--switch");
     enableDarkmode();
   } else {
+    darkStyle.classList.add("dark--switch");
     disableDarkmode();
   }
 });
