@@ -11,7 +11,7 @@ const counterAnswer = document.querySelector('[data-js="counter-answer"]');
 
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
-//Counter
+//Counter & Warnings
 
 form.elements.question.addEventListener("input", (event) => {
   let length = event.target.value.length;
