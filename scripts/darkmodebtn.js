@@ -11,13 +11,11 @@ let darkMode = localStorage.getItem("dark-mode");
 
 //enable/disable darkmode
 const enableDarkmode = () => {
-  console.log("Darkmode enable");
   darkStyle.classList.add("dark");
   localStorage.setItem("dark-mode", "enabled");
 };
 
 const disableDarkmode = () => {
-  console.log("Darkmode disable");
   darkStyle.classList.remove("dark");
   localStorage.setItem("dark-mode", "disabled");
 };
@@ -28,13 +26,17 @@ if (darkMode === "enabled") {
 }
 
 //eventlistener button
-darkSwitch.addEventListener("click", () => {
-  darkMode = localStorage.getItem("dark-mode");
-  if (darkMode === "disabled") {
-    darkStyle.classList.add("dark--switch");
-    enableDarkmode();
-  } else {
-    darkStyle.classList.add("dark--switch");
-    disableDarkmode();
-  }
-});
+
+if (darkSwitch === null) {
+} else {
+  darkSwitch.addEventListener("click", () => {
+    darkMode = localStorage.getItem("dark-mode");
+    if (darkMode === "disabled") {
+      darkStyle.classList.add("dark--switch");
+      enableDarkmode();
+    } else {
+      darkStyle.classList.add("dark--switch");
+      disableDarkmode();
+    }
+  });
+}
