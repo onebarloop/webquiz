@@ -117,8 +117,8 @@ form.addEventListener("submit", (event) => {
   } else {
     generateCard(userInput);
     cardCount++;
-    counterQuestion.textContent = "160 Zeichen übrig";
-    counterAnswer.textContent = "160 Zeichen übrig";
+    counterQuestion.textContent = "120 Zeichen übrig";
+    counterAnswer.textContent = "120 Zeichen übrig";
     event.target.reset();
     event.target.question.focus();
   }
