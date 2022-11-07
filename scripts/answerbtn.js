@@ -1,19 +1,19 @@
 //answer button
 
-const answerBtn = document.querySelector('[data-js="answerBtn"]');
+const answerBtn = document.querySelectorAll('[data-js="answerBtn"]');
 
-const answer = document.querySelector('[data-js="answer"]');
+const answer = document.querySelectorAll('[data-js="answer"]');
 
-answerBtn.addEventListener("click", () => {
-  console.log("Show Answer");
-  answer.classList.toggle("quiz-card__answer--hidden");
-});
+const showAnswer = (num) => {
+  for (let i = 0; i < answer.length; i++) {
+    if (i === num) {
+      answer[num].classList.toggle("quiz-card__answer--hidden");
+    }
+  }
+};
 
-const answerBtn2 = document.querySelector('[data-js="answerBtn2"]');
-
-const answer2 = document.querySelector('[data-js="answer2"]');
-
-answerBtn2.addEventListener("click", () => {
-  console.log("Show Answer");
-  answer2.classList.toggle("quiz-card__answer--hidden");
-});
+for (let i = 0; i < answerBtn.length; i++) {
+  answerBtn[i].addEventListener("click", () => {
+    showAnswer(i);
+  });
+}
