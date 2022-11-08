@@ -75,7 +75,11 @@ const generateCard = (data) => {
   box.append(answerBtnNew);
 
   const answerBox = document.createElement("p");
-  answerBox.classList.add("quiz-card__answer", "quiz-card__answer--hidden");
+  answerBox.classList.add(
+    "quiz-card__answer",
+    "quiz-card__answer--hidden",
+    "quiz-card__answer--animation"
+  );
   answerBox.dataset.js = "answer";
   answerBox.textContent = data.answer;
   box.append(answerBox);
@@ -86,7 +90,6 @@ const generateCard = (data) => {
     "animate__animated",
     "animate__rubberBand"
   );
-
   box.append(tagBox);
 
   const tagButton = document.createElement("button");
