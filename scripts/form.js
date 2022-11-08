@@ -57,8 +57,15 @@ const generateCard = (data) => {
   questionBox.textContent = data.question;
   box.append(questionBox);
 
+  const answerBtnNew = document.createElement("button");
+  answerBtnNew.classList.add("quiz-card__answerbtn");
+  answerBtnNew.textContent = "Answer";
+  answerBtnNew.dataset.js = "answerBtn";
+  box.append(answerBtnNew);
+
   const answerBox = document.createElement("p");
-  answerBox.classList.add("quiz-card__answer");
+  answerBox.classList.add("quiz-card__answer", "quiz-card__answer--hidden");
+  answerBox.dataset.js = "answer";
   answerBox.textContent = data.answer;
   box.append(answerBox);
 
@@ -76,6 +83,17 @@ const generateCard = (data) => {
   tagButton.textContent = `#${data.tag.toLowerCase()}`;
   tagBox.append(tagButton);
 };
+
+// Reload Script
+
+function load_js() {
+  const head = document.querySelector('[data-js="head"]');
+  const script = document.createElement("script");
+  script.setAttribute("src", "");
+  script.setAttribute("src", "./scripts/answerbtn.js");
+  console.log("hello");
+  head.append(script);
+}
 
 // Form Submit
 
@@ -116,6 +134,7 @@ form.addEventListener("submit", (event) => {
     return;
   } else {
     generateCard(userInput);
+    load_js();
     cardCount++;
     counterQuestion.textContent = "120 Zeichen übrig";
     counterAnswer.textContent = "120 Zeichen übrig";
