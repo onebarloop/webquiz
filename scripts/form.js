@@ -84,17 +84,6 @@ const generateCard = (data) => {
   tagBox.append(tagButton);
 };
 
-// Reload Script
-
-function load_js() {
-  const head = document.querySelector('[data-js="head"]');
-  const script = document.createElement("script");
-  script.setAttribute("src", "");
-  script.setAttribute("src", "./scripts/answerbtn.js");
-  console.log("hello");
-  head.append(script);
-}
-
 // Form Submit
 
 let cardCount = 0;
@@ -134,7 +123,7 @@ form.addEventListener("submit", (event) => {
     return;
   } else {
     generateCard(userInput);
-    load_js();
+
     cardCount++;
     counterQuestion.textContent = "120 Zeichen übrig";
     counterAnswer.textContent = "120 Zeichen übrig";
