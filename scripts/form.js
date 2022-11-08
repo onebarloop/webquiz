@@ -45,6 +45,17 @@ form.elements.answer.addEventListener("input", (event) => {
   }
 });
 
+//Functionality Answer-Button
+
+const showAnswer = (para) => {
+  const button = para.querySelector('[data-js="answerBtn"]');
+  const answer = para.querySelector('[data-js="answer"]');
+
+  button.addEventListener("click", () => {
+    answer.classList.toggle("quiz-card__answer--hidden");
+  });
+};
+
 //Cardgenerator
 
 const generateCard = (data) => {
@@ -82,6 +93,8 @@ const generateCard = (data) => {
   tagButton.classList.add("quiz-card__tag");
   tagButton.textContent = `#${data.tag.toLowerCase()}`;
   tagBox.append(tagButton);
+
+  return box;
 };
 
 // Form Submit
@@ -122,8 +135,8 @@ form.addEventListener("submit", (event) => {
     );
     return;
   } else {
-    generateCard(userInput);
-
+    const answerFunc = generateCard(userInput);
+    showAnswer(answerFunc);
     cardCount++;
     counterQuestion.textContent = "120 Zeichen übrig";
     counterAnswer.textContent = "120 Zeichen übrig";
