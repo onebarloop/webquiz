@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/darkmodebtn.js" defer></script>
     <script src="./scripts/bookmarks.js" defer></script>
+    <script src="./scripts/answerbtn.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -21,7 +22,13 @@
         <p class="quiz-card__question">
           What property flips the axis of a flexbox?
         </p>
-        <p class="quiz-card__answer" data-js="answer">flex-direction</p>
+        <button class="quiz-card__answerbtn" data-js="answerBtn">Answer</button>
+        <p
+          class="quiz-card__answer quiz-card__answer--animation quiz-card__answer--hidden"
+          data-js="answer"
+        >
+          flex-direction
+        </p>
         <div class="quiz-card__tagbox">
           <button class="quiz-card__tag">#css</button>
           <button class="quiz-card__tag">#flexbox</button>
@@ -32,7 +39,13 @@
       <section class="quiz-card quiz-card--hidden" data-js="test2">
         <p class="quiz-card__question">How much is 7 times 7?</p>
 
-        <p class="quiz-card__answer" data-js="answer2">49!</p>
+        <button class="quiz-card__answerbtn" data-js="answerBtn">Answer</button>
+        <p
+          class="quiz-card__answer quiz-card__answer--animation quiz-card__answer--hidden"
+          data-js="answer"
+        >
+          49!
+        </p>
         <div class="quiz-card__tagbox">
           <button class="quiz-card__tag">#math</button>
           <button class="quiz-card__tag">#multiplication</button>
