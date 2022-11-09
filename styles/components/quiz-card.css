@@ -49,7 +49,6 @@
   border: 2px solid black;
   height: 25px;
   border-radius: 10px;
-  z-index: 1;
 }
 
 .quiz-card__bookmark > img {

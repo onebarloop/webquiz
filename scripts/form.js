@@ -45,6 +45,17 @@ form.elements.answer.addEventListener("input", (event) => {
   }
 });
 
+//Functionality Answer-Button
+
+const showAnswer = (para) => {
+  const button = para.querySelector('[data-js="answerBtn"]');
+  const answer = para.querySelector('[data-js="answer"]');
+
+  button.addEventListener("click", () => {
+    answer.classList.toggle("quiz-card__answer--hidden");
+  });
+};
+
 //Cardgenerator
 
 const generateCard = (data) => {
@@ -57,8 +68,19 @@ const generateCard = (data) => {
   questionBox.textContent = data.question;
   box.append(questionBox);
 
+  const answerBtnNew = document.createElement("button");
+  answerBtnNew.classList.add("quiz-card__answerbtn");
+  answerBtnNew.textContent = "Answer";
+  answerBtnNew.dataset.js = "answerBtn";
+  box.append(answerBtnNew);
+
   const answerBox = document.createElement("p");
-  answerBox.classList.add("quiz-card__answer");
+  answerBox.classList.add(
+    "quiz-card__answer",
+    "quiz-card__answer--hidden",
+    "quiz-card__answer--animation"
+  );
+  answerBox.dataset.js = "answer";
   answerBox.textContent = data.answer;
   box.append(answerBox);
 
@@ -68,13 +90,14 @@ const generateCard = (data) => {
     "animate__animated",
     "animate__rubberBand"
   );
-
   box.append(tagBox);
 
   const tagButton = document.createElement("button");
   tagButton.classList.add("quiz-card__tag");
   tagButton.textContent = `#${data.tag.toLowerCase()}`;
   tagBox.append(tagButton);
+
+  return box;
 };
 
 // Form Submit
@@ -115,7 +138,8 @@ form.addEventListener("submit", (event) => {
     );
     return;
   } else {
-    generateCard(userInput);
+    const answerFunc = generateCard(userInput);
+    showAnswer(answerFunc);
     cardCount++;
     counterQuestion.textContent = "120 Zeichen übrig";
     counterAnswer.textContent = "120 Zeichen übrig";
