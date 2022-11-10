@@ -13,5 +13,3 @@ let bookcheck2 = localStorage.getItem("bookmark2");
 if (bookcheck2 === "on") {
   question2.classList.remove("quiz-card--hidden");
 }
-
-let a = newDate();
